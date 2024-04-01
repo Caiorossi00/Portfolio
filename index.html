@@ -9,8 +9,7 @@
       href="https://cdn.icon-icons.com/icons2/2249/PNG/512/alpha_c_circle_outline_icon_140018.png"
       type="image/jpg"
     />
-
-    <title>Caio Rossi - Portifolio</title>
+    <title>Caio Rossi - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -19,6 +18,7 @@
       <div class="logo">Caio Rossi</div>
       <div>
         <ul class="nav-links">
+          <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -33,6 +33,7 @@
           <span></span>
         </div>
         <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -40,24 +41,20 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img class="avatar" src="./assets/caio.png" alt="profile picture" />
+        <img src="./assets/profile-pic.png" alt="Caio Rossi profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Caio Rossi</h1>
-        <p class="section__text__p2">
-          Frontend Developer
-          <br />
-          Student
-        </p>
+        <p class="section__text__p2">Frontend Developer</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/Cv-caio.pdf')"
+            onclick="window.open('./assets/Currículo-2024-EN.pdf')"
           >
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='#contact'">
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
@@ -77,6 +74,64 @@
         </div>
       </div>
     </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ year <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                CS50x - Harvard<br />
+                CS50t - Harvard<br />
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              The world of technology has always been around me since childhood,
+              but life led me to explore other areas. I entered college for
+              tourism at the age of 17, a few months after finishing high
+              school. I faced the pandemic period and completed my education
+              with a contribution to the area that I am proud of. It was only at
+              the age of 23 that I returned to contact with the field that made
+              me seek a new direction and make a career transition: programming.
+              I began to study and had my first contact with HTML and CSS, and I
+              instantly fell in love. From the beginning of my journey until
+              today, programming is a fundamental part of my daily life.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
@@ -85,22 +140,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/bookstore.png"
+                src="./assets/project-1.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Bookstore</h2>
+            <h2 class="experience-sub-title project-title">BookBay</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Caiorossi00/Bookstore'"
+                onclick="location.href='https://github.com/Caiorossi00/BookBay'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://caiorossi00.github.io/Bookstore/'"
+                onclick="location.href='https://bookbayy.netlify.app'"
               >
                 Live Demo
               </button>
@@ -109,22 +164,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/finances.png"
+                src="./assets/project-2.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Finances</h2>
+            <h2 class="experience-sub-title project-title">Insightify</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Caiorossi00/FinanceTracker?tab=readme-ov-file'"
+                onclick="location.href='https://github.com/Caiorossi00/Insightify'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://caiorossi00.github.io/FinanceTracker/'"
+                onclick="location.href='https://caiorossi00.github.io/Insightify/'"
               >
                 Live Demo
               </button>
@@ -133,46 +188,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/modish.png"
+                src="./assets/project-3.png"
                 alt="Project 3"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Modish</h2>
+            <h2 class="experience-sub-title project-title">API Filter</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Caiorossi00/Modish?tab=readme-ov-file'"
+                onclick="location.href='https://github.com/Caiorossi00/City-and-state-filter'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://caiorossi00.github.io/Modish/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/songs.png"
-                alt="Project 4"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Songs</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Caiorossi00/Songs'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://caiorossi00.github.io/Songs/'"
+                onclick="location.href='https://caiorossi00.github.io/City-and-state-filter/'"
               >
                 Live Demo
               </button>
@@ -180,6 +211,12 @@
           </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -188,11 +225,11 @@
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
-            alt="email icon"
+            alt="Email icon"
             class="icon contact-icon email-icon"
           />
           <p>
-            <a href="mailto:caiorossi.code@gmail.com"
+            <a href="mailto:Caiorossi.code@gmail.com"
               >Caiorossi.code@gmail.com</a
             >
           </p>
@@ -200,7 +237,7 @@
         <div class="contact-info-container">
           <img
             src="./assets/linkedin.png"
-            alt="linkedin icon"
+            alt="LinkedIn icon"
             class="icon contact-icon"
           />
           <p>
@@ -215,11 +252,13 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p class="">Copyright &#169; 2024 Caio Rossi. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Caio Rossi. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
